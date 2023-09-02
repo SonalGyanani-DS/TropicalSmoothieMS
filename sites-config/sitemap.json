@@ -1,0 +1,7 @@
+{
+  "generate_sitemap": true,  
+  "exclude_list": [  
+    "robots.txt",
+    "404"
+  ]
+}

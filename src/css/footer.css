@@ -1,0 +1,26 @@
+  
+
+/* Footer */
+.footer{@apply p-14 bg-green-bg}
+.footer .Footer-topWrapper {@apply flex justify-between border-t-2  border-t-light-grey items-center}
+.footer .Footer-topWrapper .footerSocial{@apply pt-8 pb-10}
+.footer .Footer-topWrapper .footerLogo{@apply lg:mt-3}
+.footer .Footer-topWrapper .footerLogo svg{@apply max-w-full} 
+.footer .Footer-topWrapper .footerLogo img{@apply hidden}
+.footer .footerSocial a{@apply mr-2 inline-block mr-[.625rem]}
+.footer .footerSocial a img{@apply w-6}
+.footer .footerMenusList{@apply flex pb-[74px] border-b-2  border-b-light-grey}
+.footer .footerMenusList .Footer-col{@apply pr-12 }
+.footer .footerMenusList .Footer-col .title{@apply text-white text-xs font-bold uppercase md:after:hidden after:content-[''] after:bg-rightArrow after:h-3 after:w-3 after:inline-block after:float-right after:bg-no-repeat after:bg-contain focus:bg-transparent}
+ 
+
+.footer .footerMenusList .Footer-col ul{}
+.footer .footerMenusList .Footer-col ul li{}  
+.footer .footerMenusList .Footer-col ul li a{@apply block text-white text-xs font-medium uppercase mt-[.75rem] no-underline hover:underline leading-[14px]; font-weight: 600;}
+
+.Footer-bottomWrapper{@apply flex justify-between mt-[19px] leading-[1.15] items-center}
+.Footer-bottomWrapper .Footer-bottomLinks{}
+.Footer-bottomWrapper .Footer-bottomLinks a{@apply text-white text-xs leading-[1.15] uppercase pr-4 font-semibold hover:underline}
+.Footer-bottomWrapper .Footer-copyright{@apply text-white text-xs font-bold pt-8 md:pt-0}
+
+*{-webkit-tap-highlight-color: transparent;}

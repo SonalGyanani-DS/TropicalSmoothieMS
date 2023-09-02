@@ -1,0 +1,218 @@
+ 
+
+
+/* Header Start */
+.tropicalSmoothieHeader{@apply flex justify-between items-center  sticky top-[0px] bg-white z-[999999];     -webkit-box-shadow: 0 0.125rem 0.3125rem 0 rgba(99,100,102,.1);
+    box-shadow: 0 0.125rem 0.3125rem 0 rgba(99,100,102,.1); padding: 11px 12px 10px 13px;} 
+  .filterModel .tropicalSmoothieHeader {  z-index: 1;}
+  .tropicalSmoothieHeader .leftPart{@apply flex justify-between  items-center} 
+  .tropicalSmoothieHeader .rightPart{@apply flex justify-between  items-center} 
+  .tropicalSmoothieHeader .headerLogo{@apply max-w-[200px] mr-[15px] relative left-[-1px] top-[-1px]}
+  .tropicalSmoothieHeader .headerLogo img{@apply lg:h-[43px]}
+  
+  .tropicalSmoothieHeader .headerMenus{@apply -mt-1} 
+  .tropicalSmoothieHeader .headerMenus ul{@apply md:flex md:items-center md:text-center} 
+  .tropicalSmoothieHeader .headerMenus ul li{@apply inline-block px-4 ; line-height: 15px;} 
+  .tropicalSmoothieHeader .headerMenus ul li a{@apply font-primary font-bold relative text-dark-gray uppercase text-base hover:after:bg-navHover hover:after:w-full hover:after:h-[2px] 
+  hover:after:inline-block hover:after:absolute hover:after:left-0 hover:after:-bottom-4   } 
+  
+  .tropicalSmoothieHeader .headerMenus ul .downlaodApp{@apply md:hidden max-w-[204px] text-center}
+  .tropicalSmoothieHeader .headerMenus ul .downlaodApp a {@apply px-0 py-[1px] border border-red  text-[1rem] font-bold bg-red text-white rounded-[3px] hover:bg-white hover:text-red after:opacity-0;
+    -webkit-transition: background-color .2s ease,color .2s ease;
+    transition: background-color .2s ease,color .2s ease; 
+  }
+     
+  
+  
+  .tropicalSmoothieHeader .headerIconMenus{@apply flex justify-between text-center}
+  .tropicalSmoothieHeader .headerIconMenus .icons{@apply pr-4} 
+  .tropicalSmoothieHeader .headerIconMenus .icons img{@apply m-auto relative -top-2 order-1} 
+  .tropicalSmoothieHeader .headerIconMenus .icons+.icons img{@apply -top-[7px]}
+  .tropicalSmoothieHeader .headerIconMenus .icons a{@apply font-primary relative font-bold text-dark-gray uppercase text-xs mt-2 inline-flex flex-col hover:after:bg-navHover hover:after:w-full hover:after:h-[2px] 
+    hover:after:inline-block hover:after:absolute hover:after:left-0 hover:after:-bottom-[0] hover:after:w-full}  
+    
+  @media screen and (min-width: 992px){
+    .tropicalSmoothieHeader .headerIconMenus .icons a{@apply pb-[3px]}  
+    .tropicalSmoothieHeader .headerIconMenus .icons a span{@apply order-2}
+  }  
+  
+    .tropicalSmoothieHeader .headerIconMenus .icons:first-child a{@apply relative top-[1px]}
+  .tropicalSmoothieHeader .headerOrderNowCta{@apply pr-2} 
+  .tropicalSmoothieHeader .headerOrderNowCta .redBtn{@apply font-primary whitespace-nowrap } 
+  
+ 
+  
+  
+/* ---------normal css-------- */
+
+
+a{ @apply focus:outline-none focus-visible:outline-none}
+body{ @apply font-primary text-dark-gray text-black overflow-x-hidden}
+h1 {@apply text-4xl font-normal;}
+h2 {  @apply text-2xl font-normal;}
+.centered-container {  @apply mx-auto px-5 md:px-14 max-w-screen-xl;}
+.container-lg{  @apply mx-auto px-5 md:px-14 max-w-[120rem];}
+.container-custom{ @apply max-w-[100rem] mx-auto px-4 lg:px-6}
+.container-custom1{ @apply max-w-[90.75rem] mx-auto px-4 lg:px-6}
+.container{ @apply px-4 lg:px-5 max-w-full xl:max-w-screen-xl 2xl:max-w-screen-2xl}
+#root{  @apply flex flex-col min-h-screen}
+.section { @apply mt-8 mb-16;}
+.primary-cta { @apply bg-Dark-red hover:bg-red;}
+.secondary-cta { @apply bg-Dark-red hover:bg-red;}
+.image { @apply rounded-xl drop-shadow-md;}
+.image:hover { transform: scale(1.02);  transition-duration: 0.3s;  cursor: pointer;}
+.social-link { @apply text-black flex gap-x-3  hover:cursor-pointer;}
+.card {  @apply rounded-xl drop-shadow-md;}
+.card:hover {  transform: scale(1.02);  transition-duration: 0.3s;  cursor: pointer;}
+.pagination-conatiner button[disabled]{  @apply hidden  }
+nav[aria-label="Pagination"] button{  @apply rounded-none  border-red}
+nav[aria-label="Pagination"] button:hover, nav[aria-label="Pagination"] button.bg-primary-light{  @apply bg-red text-white}
+nav[aria-label="Pagination"] button:disabled{  @apply cursor-not-allowed text-opacity-60 bg-opacity-60}
+nav .active{ @apply bg-light-red}
+.selectedLabel{@apply block}
+
+/* Header */
+.site-header{   @apply pt-4 relative}
+.site-header .header-top{  @apply text-nav-link pt-0 md:pt-8 pb-4}
+.site-header .header-top .logo svg{  @apply w-auto min-w-[7.563rem] min-h-[3.813rem]}
+.site-header .header-top .logo img{  @apply w-36 h-14 lg:h-auto  lg:w-[14.625rem] mx-auto lg:ml-0}
+.site-header .container{  @apply flex flex-row justify-between}
+.site-header .right-menu{ @apply hidden}
+.site-header .right-menu ul{  @apply flex items-center}
+.site-header .right-menu ul li{  @apply border-l-2 border-right-menu-b first:border-l-0}
+.site-header .right-menu ul li{  @apply text-nav-link}
+.site-header .main-nav{  @apply text-[.92857rem] lg:text-sm uppercase text-black lg:text-nav-link relative z-[999] block bg-bg-primary}
+.site-header .main-nav ul{  @apply flex items-start justify-start  lg:items-center lg:justify-around leading-[3.125rem] w-full pt-[3.125rem] lg:pt-0}
+.site-header .main-nav ul li{ @apply w-full border-t  border-nav-li-border lg:border-t-0 lg:w-auto }
+.site-header .main-nav ul li:nth-child(2){@apply ml-0 lg:ml-2.5 }
+.site-header .main-nav ul li:nth-child(12) a{  @apply text-red}
+.site-header .main-nav ul li a{  @apply inline-block w-full align-top relative text-[#02a6db] lg:text-black font-bold capitalize !text-[0.938rem]  py-0 px-4 lg:px-0 2xl:px-3 hover:bg-black hover:text-white}
+.logo{@apply w-full text-center }
+.logo-inner{@apply max-w-[9.375rem] mr-0 ml-auto sm:mx-auto lg:mx-0  lg:max-w-[14.375rem] }
+.logo svg{@apply  mx-auto lg:mx-0  }
+.store-inner img {@apply w-8 lg:w-[2.063rem] !h-8 md:h-[2.188rem]}
+
+body.menu-opened{ @apply overflow-hidden lg:overflow-auto;}
+.menu-opened .hdr-right ul{  @apply right-0}
+.menu-opened{  @apply overflow-hidden lg:overflow-visible}
+.menu-btn{  @apply z-[9999] absolute left-4 top-3 lg:top-6 lg:hidden text-[0.5625rem] uppercase leading-none;}
+.menu-btn svg{  @apply w-8 mx-auto mb-1}
+.menu-btn svg.close{  @apply hidden}
+ 
+.menu-opened .menu-btn svg.close{  @apply hidden  h-6 w-6}
+.top-hdr-links{ @apply flex px-0 sm:px-3 mx-3 mt-4 float-right pr-0}
+.top-hdr-links li{ @apply border-r border-box-border last:border-none }
+.top-hdr-links li a{ @apply hover:text-red }
+ 
+.menu-opened .site-header .main-nav ul li a{@apply font-bold}
+.middle-head button#menu-btn{@apply static pr-5}
+
+
+
+
+/* 27-03-23  */
+
+.trustpilot-widget{@apply text-center mb-2 md:mb-0 md:!float-right !max-w-[auto] }
+.middle-head{@apply flex justify-between}
+.search-bar{@apply px-2 lg:px-[3.313rem] max-w-[auto] lg:max-w-[32.875rem] ml-0 sm:ml-10 mt-0 sm:mt-6 relative bg-bg-blue sm:bg-transparent}
+.link-left{@apply flex justify-end w-auto sm:w-full}
+.search-bar input {@apply h-[2.5rem] border border-bg-primary rounded}
+.search-bar button.btn-search {@apply bg-search_icon h-[2.375rem] w-[3rem] absolute right-2  lg:right-[3.125rem] top-[0.625rem] sm:top-0 bg-no-repeat bg-center}
+.nav-search-wrapper {@apply bg-[#004986] p-[0.625rem] w-full relative}
+
+
+.site-header .header-top .top-hdr-links li {@apply flex}
+.top-hdr-links a {@apply text-sm text-black font-bold hidden lg:block}
+
+
+
+.store-inner {@apply pt-0 pl-[15px] w-auto min-h-[37px] text-left relative text-[#1e293e] mx-0 flex gap-2}
+.company-info-footer {@apply block md:flex items-center justify-between pt-2 pb-5}
+footer.site-footer .store-inner img {@apply w-auto}
+.store-inner .ki {@apply text-[2rem]}
+footer.site-footer .cta-list a.Link {@apply text-[0.688rem] text-[#e9e9e9] mr-3}
+
+
+
+
+
+/* 404 page */
+.department-sec{ @apply border-t border-box-border pt-4 }
+.department-sec h3{ @apply text-xl }
+.department-sec ul{ @apply flex  justify-around py-4 flex-wrap }
+.department-sec ul a{ @apply underline hover:no-underline w-1/2 sm:w-1/2 lg:w-auto text-center sm:text-left lg:text-center   }
+.content-list.\34 04-page h1 {@apply font-secondary font-bold text-4xl}
+.content-list.\34 04-page p {@apply text-base}
+.content-list.\34 04-page a.btn {@apply rounded-md bg-bg-gray1 font-secondary text-white}
+.content-list.\34 04-page a.btn.btn-back{@apply bg-bg-blue border-none}
+div#reactele{@apply flex flex-col min-h-screen}
+/* Toggle navigation */
+
+.menu-icon-box {
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  width: 30px;
+}
+.menu-icon-inner {
+  background-color: #555;
+  border-radius: 4px;
+  height: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-timing-function: ease;
+  width: 30px;
+  transition-duration: .22s;
+  display: block;
+  margin-top: -2px;
+  top: 50%;
+  transition-duration: .22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.menu-icon-inner::before {
+  content: "";
+  display: block;
+  top: -10px;
+  background-color: #555;
+  border-radius: 4px;
+  height: 4px;
+  position: absolute;
+  width: 30px;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.menu-icon-inner::after {
+  content: "";
+  display: block;
+  bottom: -10px;
+  /* transition: bottom .1s .25s ease-in,transform .22s cubic-bezier(0.55, 0.055, 0.675, 0.19); */
+  background-color: #555;
+  border-radius: 4px;
+  height: 4px;
+  position: absolute;
+  width: 30px;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+body.menu-opened .menu-icon-inner::before {
+  top: 0;
+  transition: top .1s ease-out,opacity .1s .12s ease-out;
+}
+body.menu-opened .menu-icon-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom .1s ease-out,transform .22s .12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-opened .menu-icon-inner {
+  background-color: initial;
+  transform: rotate(225deg);
+  transition-delay: .12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+
+
+.c-uber.NAP-button.NAP-uber{@apply flex md:hidden items-center mt-8 -m-[5px]}
+.c-uber.NAP-button.NAP-uber svg { @apply w-[42px] h-[37px] }
+.c-uber.NAP-button.NAP-uber .location-phn{@apply uppercase}
+

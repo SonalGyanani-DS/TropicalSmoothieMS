@@ -1,0 +1,539 @@
+ 
+  
+/* hero-banner */
+.hero-section{  @apply relative z-0 overflow-hidden bg-green-bg}
+.hero-section .hero-image{  @apply w-full h-full z-10 object-cover object-center absolute top-0 left-0 opacity-60
+}
+.hero-section .hero-content{ @apply relative z-10 text-white text-base md:text-2xl py-8 md:py-16 md:pb-14 leading-7 md:leading-10 min-h-[9.75rem] md:min-h-[12.75rem] flex w-full items-center
+ md:min-h-[252px]}
+.hero-section .hero-content h1{  @apply text-[2.125rem] md:text-[2rem] mb-3 font-primary uppercase text-white font-bold text-left} 
+.hero-section .hero-content h2{@apply font-secondary text-6xl text-white font-bold uppercase inline-block mt-2}
+.hero-section .hero-content p{@apply max-w-2xl}
+.banner-text h1{ @apply text-[2.4375rem] mb-3 font-secondary text-center}
+.hero-section .hero-content button {@apply rounded-md bg-bg-blue font-secondary font-bold uppercase mt-0 md:mt-3 min-w-[10.938rem] h-[2.625rem] text-sm hover:bg-bg-hover tracking-[0.125rem]}
+
+
+
+
+/* address sec */
+.location-information{  @apply flex flex-wrap w-full justify-between max-w-[100rem] mx-auto pb-2 pt-1 lg:pb-8 }
+.address-main-sec{@apply bg-white  px-4 md:px-6 py-4  w-full sm:w-[50%] lg:w-[calc(33.33%_-_32px)] relative z-[0] order-none  border-2 border-dark-gray rounded mt-6 } 
+.address-main-sec .address-text{ @apply text-base font-normal text-dark-gray}
+.address-main-sec .NAP-crossStreet{@apply border-l-2 border-borderblue pl-3 text-dark-gray mb-4}
+.address-main-sec .map-sec{ @apply block h-72 -ml-4 w-[100vw] sm:hidden}
+.location-icon{@apply bg-bg-blue h-[1.625rem] w-[1.625rem] p-[0.313rem] md:p-[4px] xl:p-[0.313rem] rounded-full}
+.telephone{@apply bg-bg-blue h-[1.625rem] w-[1.625rem] p-[0.30rem] lg:p-[0.438rem]  rounded-full}
+.email{@apply bg-bg-blue h-[1.625rem] w-[1.625rem] p-[0.30rem] lg:p-[0.438rem]  rounded-full}
+.location-information .address-main-sec svg {@apply w-4 lg:w-auto h-4 lg:h-auto}
+.locator-main .result svg {@apply w-4 lg:w-auto h-4 lg:h-auto relative}
+.location-information .location-phn {@apply no-underline text-base font-normal text-dark-gray;}
+
+.location-information .address-main-sec,.location-information .hours,.location-information .map-sec{@apply p-6}
+
+.location-information .address-main-sec .box-title,
+.location-information .hours .box-title,
+.location-information .map-sec .box-title{ @apply mt-0 lg:leading-10}
+
+
+
+.box-title{@apply    text-[1.3125rem] md:text-[1.375rem] mb-4}
+.title-with-link{@apply flex justify-between items-center mb-4}
+.title-with-link .box-title{ @apply mb-0}
+.title-with-link-1{@apply flex justify-between items-center mb-0}
+.title-with-link-1 .box-title{ @apply mb-0}
+.text-link{ @apply relative cursor-pointer capitalize text-red hover:text-black after:content-[""] after:bg-black after:h-px after:absolute after:left-0 after:bottom-0 after:w-0 after:transition-all after:duration-500 after:hover:w-full before:content-[""] before:bg-[#333333] before:h-px before:absolute before:left-0 before:bottom-0 before:w-full  }
+.address-bx{@apply text-base }  
+.address-bx, .phone-bx{ @apply text-base  }
+.address-bx h4{@apply text-red font-normal text-base uppercase }
+.phone-bx h4{@apply text-red font-normal text-base uppercase }
+.hours{  @apply bg-white rounded border-2 border-dark-gray  w-full sm:w-[48%] lg:w-[calc(33.33%_-_32px)] p-6 mt-6 }
+.address-with-availablity{  @apply flex  items-start flex-col}
+.address-with-availablity .address{  @apply text-dark-gray text-base flex }
+.closeddot{@apply flex  items-center gap-2}
+.hours-info{@apply text-sm text-black}
+
+.button-bx button#view-more-button {@apply mt-0 text-sm border-none !mb-0 text-black w-auto hover:bg-transparent}
+.address-with-availablity > div{  @apply flex-1}
+.address-with-availablity > .availablity-content{  @apply   w-full flex   flex-wrap}
+.opennow-sec{@apply w-3/5 even:w-2/5 flex flex-row items-center text-lg sm:text-lg mb-2.5}
+.opennow-sec .icons{@apply min-w-[0.75rem] sm:min-w-[1.25rem] mr-1 sm:mr-1}
+.opennow-sec .icons img{@apply w-5 sm:w-5}
+.direction-button{@apply mt-6 }
+.direction-button a{@apply inline-block px-6 py-1 bg-red text-white border uppercase border-red rounded text-[19px] leading-[19px] font-black hover:bg-white hover:text-red }
+.direction-button .btn:hover svg{@apply !fill-red }
+.opennow-sec.deactive-feci{@apply opacity-70 text-red }
+.address-main-sec .button-bx{  @apply mt-5 justify-start ml-0 md:ml-0}
+.address-main-sec .direction-button .btn{  @apply min-w-[13.625rem]  py-1 uppercase  leading-5 !bg-red text-white  md:w-auto font-primary font-bold text-[19px] !border !border-red md:hover:!bg-white md:hover:text-red rounded inline-block text-center}
+.availability-col{  @apply mt-2  mb-0 pl-0    !flex-row flex-wrap}
+.map-sec{  @apply  hidden sm:block mt-6  h-[25rem] lg:h-auto w-full lg:w-1/3 border-2 border-dark-gray rounded p-6}
+.map-sec.without-hours{  @apply md:w-[48%] md:mt-0 lg:w-[calc(100%_-_26rem)]}
+.map-sec > div{@apply rounded-2xl}
+
+
+
+
+.about-sec{@apply  relative px-0 lg:px-5 mt-0  pt-0 lg:py-12 lg:px-14 mt-4  }
+.about-sec .about-content{@apply mt-5 lg:mt-0 w-full overflow-visible lg:w-[57.6%] xl:w-[50.6%] ml-auto lg:pr-10 lg:pb-12 lg:pt-6 xl:pt-12 flex items-center relative}
+.about-sec:after{@apply content-[''] static lg:absolute bg-[#2AB6DF1F] w-auto h-[35.5rem] left-[24vw] -z-[1] top-0 right-0}
+.about-sec .about-content h2{@apply mb-3 md:mb-6 text-left lg:block font-bold text-bg-gray1 text-2xl md:text-[3rem] font-secondary}
+.about-inner-sec h2{@apply block text-center w-full pb-0 lg:pb-6 lg:pb-0  font-medium text-red     text-[1.625rem]}
+.about-inner-sec img{ border-radius: 0 20px 0 20px;@apply w-full lg:w-[50rem] h-auto md:h-[28.938rem] object-cover}
+.about-sec .content-center{ @apply flex lg:inline-block  }
+.about-sec .about-content .about-content-inner{@apply text-black leading-7 text-sm md:text-base mt-0 lg:mt-3 md:mt-6 }
+.about-sec .about-content .btn{@apply mt-2 md:mt-6  }
+.about-inner-sec{ @apply flex flex-wrap }
+.right-description .content-inner{@apply text-black leading-7 text-lg mt-3 md:mt-6 }
+
+.about-sec .about-content .button-red{@apply w-[9.75rem] text-sm font-secondary font-bold bg-bg-gray1 border-none rounded-md hover:bg-bg-hover tracking-[0.125rem]}
+.about-inner-sec .splide .splide__arrows{ @apply absolute bottom-0 left-0 p-0.5 flex}
+.about-inner-sec .splide .splide__arrows .splide__arrow{  @apply relative top-auto left-auto transform translate-x-0 translate-y-0 !opacity-100 right-0 w-[4.375rem] h-[3.75rem] rounded-none bg-white disabled:hidden}
+.about-inner-sec .splide .splide__arrows .splide__arrow.splide__arrow--next{  @apply ml-0.5}
+.about-inner-sec .splide__track{  @apply lg:h-full}
+.about-inner-sec .splide__slide img{ @apply lg:h-full lg:object-cover transition-all duration-300}
+.about-inner-sec .splide__slide img:hover{@apply transform scale-105}
+.splide__slide img{  @apply w-full}
+.splide{  @apply w-full}
+.offerBanner{  @apply w-full pb-7 md:pb-10}
+.offerBanner img{  @apply w-full shadow-2xl}
+
+.gallery-sec{@apply  m-0 relative  }
+.gallery-bg{@apply absolute inset-0 -z-10 }
+.gallery-bg img{@apply  w-full h-full }
+.photos-row{@apply grid gap-3 md:grid-cols-2  lg:grid-cols-3}
+.image-frame{@apply !m-2 border p-3 border-dashed border-gray-dark w-full  }
+.photos-row img{@apply w-full  rounded-none object-cover h-80  }
+
+/* Available Stock sec */
+.available-stock h2 {@apply font-secondary text-2xl md:text-5xl font-bold text-bg-gray1 mb-5}
+.available-stock .about-content-inner {@apply text-center leading-7}
+.available-stock{@apply  relative mt-3 py-8 md:py-12 px-2 md:px-14  }
+/* .available-stock .about-inner-sec a{@apply relative ml-2}
+.available-stock .about-inner-sec a:after{@apply content-[''] absolute bg-black w-[0.063rem] h-[0.875rem] ml-1 top-1} */
+.available-stock .about-inner-sec a.Link {@apply border-r border-black px-1 hover:text-bg-blue}
+
+
+
+/* Meet team */
+.meet-team {@apply bg-[#fbfbfb]}
+.meet-team img{@apply border-[0.625rem] border-[#ececec] rounded-3xl}
+.meet-team {@apply bg-[#fbfbfb]} h2.meet-title {@apply text-center !text-lg text-[#2d3846]  !mb-0}
+.meet-team .about-content-inner {@apply text-[#2d3846] text-center}
+.meet-team h2 {@apply font-secondary text-2xl  md:text-5xl font-bold text-bg-gray1 mb-5}
+.meet-team{@apply  relative mt-3 py-8 md:py-12 px-2 md:px-14  }
+.meet-team .flex.flex-raw .team-page{@apply w-full sm:w-1/2 lg:w-1/4}
+
+
+
+/* Take A Look Inside Our Branch */
+
+.gallery img {@apply w-full md:h-[9.75rem] lg:h-[13.75rem] object-cover}
+.gallery{@apply  relative  mt-3 py-8 md:py-12 px-2 md:px-14  }
+.gallery h2 {@apply font-secondary text-2xl leading-[2.5rem] md:text-5xl font-bold text-bg-gray1 mb-5}
+.gallery .Branches {@apply mb-4 md:mb-0}
+/* featuredBrand */
+
+.featuredBrand {@apply bg-[#fbfbfb]  mt-3 py-8 md:py-12 px-10 md:px-14}
+.featuredBrand h1 {@apply font-secondary text-2xl md:text-5xl font-bold text-bg-gray1 mb-6 md:mb-[3.5rem] pb-0}
+
+.img-splide {@apply h-[8.313rem] max-w-[auto] md:max-w-[12.5rem] bg-white}
+.img-splide img{@apply h-[8.313rem] object-contain}
+
+/* Store location sec */
+.locator-main .result table { border-style: inherit;@apply bg-[#2AB6DF1F] !border border-[#0000002E] text-black ml-8 xl:ml-12 max-w-[initial] md:max-w-[19rem] lg:max-w-[22rem]}
+.locator-main .result table td {@apply !pl-0 text-sm text-black pt-2 pb-2} 
+.locator-main .result table span {@apply text-sm text-black}
+.locator-main .result table span.time-b{@apply w-[3.813rem]}
+.locator-main .result table tr{@apply border-b border-[#00000033]}
+/* .locator-main .result table span.dash{@apply w-[0.313rem] h-[0.125rem]} */
+.locator-main .result table tr.currentDay span{@apply text-white}
+.locator-main .result table tr.currentDay {@apply bg-bg-gray1 text-white border-b-0}
+.locator-main .result table tr.currentDay td {@apply text-white font-normal}
+/* .locator-main .result table tr.currentDay span.dash {@apply bg-white} */
+.locator-main .result table span.span-dayname {@apply pl-7}
+
+
+.locator-main .result table tr.currentDay .span-dayname {@apply relative inline-block }
+
+.locator-main .result table tr.currentDay .span-dayname:before {@apply absolute top-[0.125rem] left-[0.25rem] h-[1.125rem] w-[1.125rem] content-[''] bg-bg-primary
+}
+.locator-main .result table tr.currentDay .span-dayname:after{
+  @apply content-[''] w-1.5 h-2.5 border-b-2 border-r-2 border-white absolute top-[0.313rem] left-[0.625rem] transform rotate-45
+}
+
+/* 05-04-23 */
+.location-information h4.box-title{@apply text-[32px] text-dark-gray !font-secondary font-bold mb-6 flex gap-3 uppercase}
+
+
+/* services sec */
+.services-sec{@apply bg-white w-full pt-8 pb-16 md:py-9 }
+.sec-title{@apply mb-4 md:mb-7}
+.sec-title h2, .sec-title h1{@apply text-center text-2xl    md:text-[1.75rem] text-red  }
+.sec-title h1{@apply mb-5}
+.services-inner{@apply flex flex-wrap  }
+.services-inner .service-icon{@apply  m-0 }
+.services-inner .item{@apply px-2 w-full sm:w-1/2 lg:w-1/3 my-2}
+.services-inner .service-item{@apply border border-box-border flex flex-col p-0 w-full h-full }
+.service-item .service-img{@apply overflow-hidden}
+.service-img img{@apply h-52 object-cover transition-all duration-300}
+.service-item:hover img{@apply transform scale-105}
+.service-item h3{ @apply text-lg md:text-lg    text-left mt-4 mb-2  }
+.service-desc-main{ @apply  px-3  pb-5 }
+.service-desc{@apply text-base text-left min-h-[4.25rem]   }
+.services-inner  .service-item .button-bx{@apply justify-start  max-w-[10.0625rem] sm:max-w-none  }
+.services-inner  .service-item .button-bx .btn{ @apply uppercase     max-w-[10.0625rem] text-base border-gray }
+
+.services-inner #splide-nearby{
+  @apply max-w-[20rem] sm:max-w-[30rem] md:max-w-[40rem] xl:max-w-full mx-auto
+}
+.mobile-serv-item .service-img{@apply rounded-full w-32 h-32  }
+.services-inner .mobile-serv-item .service-item{@apply items-center }
+.services-inner .button-bx .btn{ @apply text-xs}
+.services-inner .mobile-serv-item{@apply w-full h-full}
+.services-inner .splide__arrow--prev{@apply -left-8 }
+.services-inner .splide__arrow--next{ @apply -right-8 }
+
+ 
+/* faq */
+.faq-main-sec{@apply m-0 relative pb-7 pt-0 md:pb-0 }
+.faq-sec{@apply m-0 mt-3 py-8 md:py-12 px-2 md:px-14}
+.faq-card { @apply w-full mx-auto mt-11}
+.faq-card h2{@apply font-secondary text-2xl leading-[2.5rem] md:text-[3.25rem] font-bold text-dark-gray mb-6 text-center uppercase}
+.faq-tab{@apply w-full text-left mt-0  }
+.faq-tab .faq-tab{@apply   mt-0  }
+.faq-card .faq-tabs .faq-tab{@apply border-t border-dark-gray py-4 px-4   last:border-b last:border-dark-gray} 
+ 
+.faq-tab .faq-tab-label{ @apply w-full text-xl !border-none   text-dark-gray}
+.faq-tab .faq__question-button{@apply leading-7 relative w-full text-left after:absolute after:top-0 after:right-4 after:w-5 after:h-5 md:after:w-7 md:after:h-7 after:rounded-full mt-0 after:-z-[1]}
+
+ 
+ 
+.faq-tab .faq-tab-label p{@apply text-dark-gray text-base font-bold font-primary  pr-10}
+.faq-tab-content.current{@apply text-white font-normal }
+.faq-tab  .faq-tab-label{ @apply  relative font-normal cursor-pointer border-b }
+.faq-tab-content{@apply text-sm leading-7 md:text-lg text-black pt-0 pb-3 md:py-3 bg-opacity-25 text-base }
+.faq-tab-content div{@apply text-base font-primary text-dark-gray cursor-text }
+.faq-tab-content p{@apply text-base text-dark-gray }
+
+.accordion__panel[hidden]{@apply block max-h-0; transition: all .65s  ease-in-out;}
+.accordion__panel{@apply max-h-96 overflow-y-hidden; transition: all .65s  ease-in-out; }
+.accordion__panel a{@apply underline hover:no-underline}
+ 
+ 
+.view-more{  @apply text-center mt-5}
+
+.faq_CTA{@apply mt-6 text-center}
+.faq_CTA a{@apply font-secondary font-bold rounded-md !bg-bg-gray1 text-white text-sm border-none px-7 py-3 hover:!bg-bg-hover tracking-[0.125rem]}
+
+.faq-tab .accordion__button .faq-tab-label:after, 
+.faq-tab .faq-tab-label:before {content: "";display: block;width: 1.5rem;height: 0;border-bottom: 0.125rem solid #359efa;position: absolute;top: 44%; left: calc(100% - 32px); -webkit-transition: all .65s ease;
+  transition: all .65s ease;}
+.faq-tab .accordion__button[aria-expanded="false"] .faq-tab-label:before{transform: rotate(90deg); -webkit-transition: all .65s ease;
+  transition: all .65s ease;}
+.faq-tab .accordion__button[aria-expanded="true"] .faq-tab-label:before{-webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: all .65s ease;
+  transition: all .65s ease;
+}
+
+  .faq-tab .accordion__button[aria-expanded="true"] .faq-tab-label:after{width: 0; height: 0; -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition: all .65s ease;
+    transition: all .65s ease}
+
+  
+
+
+/* near by */
+.nearby-sec{@apply bg-[#fbfbfb] w-full pt-14  }
+.nearby-sec-inner{@apply flex flex-wrap mt-12 justify-center -mx-4 }
+.nearby-sec .splide__slide{@apply xl:px-0}
+.nearby-sec-inner .nearby-card{@apply w-1/3 mb-6 px-4; -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 0%;
+  flex-basis: auto;}
+.nearby-sec-inner .nearby-card .nearby-card1{@apply border-2 border-dark-gray p-6 rounded overflow-hidden h-full }
+.nearby-card .red-dot{ @apply !justify-start}  
+.nearby-card .icon-row{ @apply p-0 block}
+.nearby-card .OpenDot{ @apply text-lg}
+.nearby-card h2{}
+.nearby-card h2 a{ @apply  text-lightGreen text-[19px] font-bold uppercase hover:underline}
+
+.nearby-card .distance{ @apply absolute right-2 top-0 md:-top-0.5}
+.near-address{ @apply flex mt-2 items-start min-h-[90px]}
+.nearby-card .address { @apply text-sm gap-2 flex }
+.nearby-card .address span{@apply text-base text-dark-gray font-normal}
+.nearby-card .address .address_1 div{@apply mt-2 w-full}
+.nearby-card .address .NAP-crossStreet{@apply border-l-2 border-borderblue pl-3 }
+.nearby-card .address .address_1 div{@apply  text-base text-dark-gray}
+.nearby-card .address .address_1 p{@apply text-base text-dark-gray font-normal mb-2}
+.nearby-card .availability-col{@apply my-4 hidden md:flex md:max-w-[100%] lg:max-w-none }
+#splide-nearby{  @apply max-w-[79.75rem] mx-auto}
+.nearby-sec .splide__pagination{  @apply -bottom-2}  
+.nearby-sec .splide__pagination__page{  @apply w-2.5 h-2.5 bg-red !opacity-40}
+.nearby-sec .splide__pagination__page.is-active{  @apply bg-red scale-100 !opacity-100}
+
+.nearby-sec .sec-title{@apply mb-0} 
+.nearby-sec .sec-title h2{@apply  font-secondary text-2xl  md:text-[3.25rem] font-bold text-dark-gray mb-6 text-center uppercase}
+.nearby-sec .icon-row.closeing-div { @apply mb-0}
+.featuredBrand .splide__arrow--prev {@apply -left-[2.75rem] bg-bg-blue}
+.featuredBrand .splide__arrow--next {@apply -right-[2.75rem] bg-bg-blue}
+.featuredBrand .splide__arrow--prev:disabled {    border: 1px solid #bdb8c1;  @apply !bg-transparent !border !border-[#bdb8c1]}
+.featuredBrand .splide__arrow svg {@apply fill-white h-4 w-4}
+.featuredBrand .splide__arrow--next svg {@apply fill-white}
+.featuredBrand .splide__arrow:disabled {@apply opacity-100}
+.Features-brand .img-splide {@apply m-2 md:m-0}
+.featuredBrand .splide__arrow--prev:disabled svg{@apply fill-[#bdb8c1]}
+
+.nearby-sec .content-center{@apply mb-7 mt-2}
+.nearby-sec .nearby-card svg{@apply w-4 lg:w-auto h-4 lg:h-auto}
+
+
+
+/* newsletter sec */
+.newsletter-section{ @apply bg-newslettter_bg_mob lg:bg-newslettter_bg py-6 mt-10 w-full inline-block }
+.newsletter-inner{@apply  max-w-[25.75rem] mx-auto px-4  }
+.newsletter-section p{@apply text-white text-sm md:text-lg text-center md:text-left }
+.search-field-bx{@apply flex mt-6 }
+.search-field-bx input{@apply bg-white text-gray-dark w-full px-3 py-3 text-sm outline-none flex-[1_1_auto] }
+.search-field-bx button{@apply bg-red hover:bg-Dark-red text-white py-3 px-4 text-sm flex-[1_1_auto] whitespace-nowrap }
+.newsletter-logo{@apply    mx-auto w-full mb-6 }
+.newsletter-logo img{@apply mx-auto  }
+
+
+/* CS Added For Location detail page on 24-04 */
+
+.banner-content-row{
+  @apply flex md:justify-between
+}
+
+.banner-content-row .banner-text{
+  @apply w-[58%] md:relative md:top-[-2px]
+}
+
+
+.banner-content-row .banner-box{
+  @apply w-[40%]  md:relative md:top-[-2px]
+}
+
+.inner-box-wrapper{
+  @apply bg-white p-6 rounded border border-[#555] text-center;
+}
+.inner-box-wrapper .closeing-div{
+  @apply justify-center;
+}
+
+.banner-box .Hero-cta{
+  @apply flex justify-center flex-wrap
+}
+
+.banner-box .redBtn{
+  @apply py-1 mt-4 mx-2 block leading-[19px] text-[19px] whitespace-nowrap ;
+}
+
+/* Red Banner Box */
+
+.banner-red-box{
+  @apply bg-red text-center px-8 py-4 text-white  mx-8
+}
+
+.banner-red-box .Banner-title{
+  @apply text-2xl font-bold font-primary;
+}
+.banner-red-box .Banner-content{
+  @apply mt-2;
+}
+
+.banner-red-box .Banner-content a{
+  @apply underline hover:no-underline  
+}
+
+/* Location information */
+
+
+/* .location-information .address-main-sec h4.box-title{@apply before:content-[url("images/home.svg")]}
+.location-information .hours-sec h4.box-title{@apply before:content-[url("images/clock.svg")]}
+.location-information .Cafe-item-wrapper h4.box-title.Cafe-icon-features{@apply before:content-[url("images/glass.svg")]} */
+
+.Cafe-features-serList li.eachService{
+  @apply text-base font-normal text-dark-gray mb-4 last:mb-0 before:content-["\2022"] before:text-[#f26a57] before:font-bold before:inline-block before:text-[1.5625rem] before:mr-1 before:leading-[.16];
+}
+
+
+/* Promo Section */
+
+.Promo-image{
+  @apply w-full;  
+}
+
+.Promo-container{
+  @apply flex justify-center py-4 px-8 md:ml-[1px];
+}
+
+.Promo-infoWrapper{
+  @apply w-[80%];
+}
+
+.Promo-infoWrapper h2.Promo-title{
+  @apply text-[3.25rem] leading-tight text-white font-bold font-primary mb-4;
+}
+.Promo-details{
+  @apply mb-4;
+}
+
+.Promo-details p{
+  @apply text-base font-bold text-white;  
+}
+
+.Promo-downloadsText{
+  @apply text-xs md:text-sm text-yellow font-bold mb-4;
+}
+
+.Promo-downloads{
+  @apply flex gap-4 md:gap-8 justify-start;
+}
+
+
+
+/* News / Products Section */
+.section-title{
+  @apply text-center
+}
+.section-title h2{
+  @apply font-secondary text-2xl leading-[2.5rem] md:text-[3.25rem] font-bold text-dark-gray mb-6 text-center uppercase
+}
+
+.news-boxes{@apply md:grid md:grid-cols-3 md:gap-[1.875rem] mt-7 pb-16}
+.news-boxes .news-box{@apply relative}
+.news-boxes .news-box img{  @apply rounded-lg rounded-b-none h-[12.5rem] object-cover w-full border-b-2 border-[#e1e5e8]}
+.news-boxes .news-content-wrapper{}   
+.news-boxes .news-content-wrapper .Product-linkWrapper{@apply absolute bottom-3 md:bottom-6 left-0}
+
+.news-boxes .news-box h3{
+  @apply text-2xl font-bold text-dark-gray font-secondary tracking-normal mt-5 mb-4 px-6; 
+}
+.news-boxes .news-box p{
+  @apply text-base font-normal text-dark-gray font-primary tracking-normal mb-8 px-6; 
+}
+
+.news-box .Product-linkWrapper{
+  @apply px-6;
+}
+
+.news-box .Product-linkWrapper a{
+@apply inline-block px-6 py-1 bg-red text-white border border-red rounded text-[19px] leading-[19px] font-black md:hover:bg-white md:hover:text-red;
+}
+
+.news-boxes .news-inner{-webkit-box-shadow: 0 0.125rem 0.125rem 0 #a2a4a3;box-shadow: 0 0.125rem 0.125rem 0 #a2a4a3;height: 100%;padding-bottom: 50px; 
+  border-radius: 0.5rem 0.5rem 0 0;}
+
+
+.featuredMenu.news-boxes{
+    @apply pb-9
+  }
+.featuredMenu.news-boxes .news-inner{
+  @apply shadow-[0_0.25rem_0.5rem_rgba(0,0,0,.12),_0_0.125rem_0.25rem_rgba(0,0,0,.08)]
+}
+.view-menu-box{
+  @apply text-center pb-16
+}
+.view-menu-box a{
+  @apply inline-block px-6 py-1 bg-red text-white border border-red rounded text-[19px] leading-[19px] font-black md:hover:bg-white md:hover:text-red;
+  }
+  
+
+
+/* About Section */
+.BgAbout{@apply md:py-14 bg-cover bg-center py-5 relative z-0 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-black before:bg-opacity-50 before:-z-[1] }
+.aboutUsBlock{}
+.aboutUsBlock .about .About-title{@apply text-[3.25rem] leading-[3.75rem] text-dark-gray font-bold font-secondary mb-8 uppercase}
+.aboutUsBlock .about p{@apply mb-6 text-dark-gray text-base }
+.aboutUsBlock .actionBtn { }
+.aboutUsBlock .actionBtn .About-cta{@apply text-lightGreen text-[19px] font-primary font-bold uppercase hover:underline}
+
+.location-map-container #marker-img{@apply w-12}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact{@apply !min-h-[24px]}
+.mapboxgl-ctrl-attrib.mapboxgl-compact:hover .mapboxgl-ctrl-attrib-inner{
+  @apply block
+}
+
+ 
+/* footer sec */
+.site-footer{  @apply pt-10 }
+.site-footer .container{@apply flex flex-col mx-auto flex-wrap justify-between lg:mt-10 lg:flex-row px-0 lg:px-5 }
+.store-locator{ @apply block justify-center  lg:border-none px-5 lg:px-0 flex-[1_0_20%]  md:max-w-[20%] w-full}
+.link-sec-footer{ @apply w-full  pl-0 lg:pl-0 md:pr-0 lg:pr-5 xl:pr-7  block md:flex flex-wrap  text-left   text-black	lg:flex-row}
+.copyright-bx{@apply   flex flex-col justify-center mb-2 md:mb-0 mt-0 lg:mt-5 lg:mt-0 lg:items-start px-5 lg:px-0 text-left }
+.copyright-bx .app-icons{ @apply justify-center lg:justify-start}
+.copyright-bx .social-media-bx{ @apply justify-center lg:justify-start}
+.store-locator .store-inner{@apply relative w-auto text-base lg:text-xl mb-4 after:content-[''] font-medium justify-center flex items-center  }
+.store-locator .store-inner a{@apply hover:underline font-semibold text-[#e9e9e9] text-xs}
+.company-logo{ @apply  mt-0 w-[6.875rem]}
+.social-media-bx{@apply flex-row flex w-full my-1 }
+.social-media-bx li a{@apply transform transition-all duration-300 scale-100 hover:scale-105 inline-block}
+.company-logo svg{ @apply mr-0  mt-5 w-[166px] h-[70px] }
+.locator-main .result{ @apply bg-white shadow-[0_7px_0px_[#2AB6DF]] mb-5 rounded-md border-2 border-dark-gray ml-4 relative} 
+.locator-main .result .numbring{@apply font-bold text-dark-gray text-base absolute top-4 left-6}
+
+
+.locator-main .result.active{ @apply border-2 border-red}
+.locator-main .result.fixed-hover.active{@apply border-2 border-bg-blue }
+.locator-main .result.fixed-hover{@apply border-2 border-bg-blue }
+.footer-block{  @apply py-3 lg:py-0 lg:border-none px-5 flex-[1_0_20%] max-w-[auto] md:max-w-[20%] w-full}
+.footer-block-title{  @apply text-lg lg:text-[0.938rem] leading-6 pb-1 lg:pb-2 font-secondary font-bold text-[#e9e9e9]}
+.footer-block ul li a{  @apply text-xs leading-6 py-1 inline-block align-top hover:underline text-[#e9e9e9] }
+.site-footer .MuiPaper-elevation{ @apply !rounded-none shadow-none border-b border-[#b2b3b5] !my-0 before:hidden }
+.site-footer .MuiPaper-elevation .MuiTypography-root{ @apply font-bold !font-primary }
+.site-footer .MuiPaper-elevation .MuiTypography-root .MuiAccordionSummary-content{ @apply my-2.5}
+.site-footer .MuiButtonBase-root{@apply !min-h-[2.125rem]}
+.site-footer .MuiButtonBase-root .MuiAccordionSummary-expandIconWrapper{@apply transition-none }
+.site-footer .MuiButtonBase-root .MuiAccordionSummary-content{@apply !my-0 py-3}
+.site-footer .Mui-expanded .MuiAccordionSummary-content{@apply pb-0}
+.site-footer .Mui-expanded .MuiAccordionSummary-content .MuiAccordionDetails-root{@apply pt-0}
+.site-footer .MuiPaper-elevation .MuiTypography-root li{ @apply list-none}
+.site-footer .MuiAccordionSummary-expandIconWrapper.Mui-expanded{@apply   content-[''] absolute  right-[1rem] transform -translate-x-1/2 -translate-y-1/2 w-3 lg:w-3 h-[1px] lg:h-0.5 bg-black }
+.site-footer .MuiAccordionSummary-expandIconWrapper.Mui-expanded svg{@apply hidden  }
+.site-footer .MuiPaper-elevation .MuiTypography-root li a{ @apply !font-normal !font-primary}
+
+/* 27-03-23  */
+footer.site-footer {@apply bg-bg-secondary text-[#e9e9e9] w-full inline-block mt-auto}
+footer.site-footer .store-locator .store-inner {@apply pl-0 block}
+footer.site-footer .store-locator .store-inner {@apply flex pl-0 mt-6 !justify-start items-center}
+footer.site-footer .store-locator .store-inner img {@apply w-5 !h-5}
+.social-media-bx img {@apply w-8 h-8 mr-2 md:mr-10}  
+.jd-group img {@apply w-[12.688rem]}
+
+footer.site-footer .cta-list {@apply mt-8 pl-5 lg:pl-0}
+footer.site-footer .Contactus {@apply mt-6 flex-wrap}
+footer.site-footer .Contactus a {@apply text-[0.688rem] mr-4}
+.footer-get{@apply flex items-center gap-2 mt-4}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+.spinner-main {  position: fixed;  top: 0;  bottom: 0;  left: 0;  right: 0;  z-index: 999;  background: rgba(0, 0, 0, 0.8);}
+.spinner-container {  position:absolute;  top:50%;  left:50%;  transform:translate(-50%,-50%);  width:50px;  height:50px;  background:transparent;  border:2px solid #fff;  border-radius:50%;  text-align:center;  line-height:150px;  font-family:sans-serif;  font-size:20px;  color:black;     z-index: 9999;  letter-spacing:4px;  text-transform:uppercase;  text-shadow:0 0 10px #eb0000;  box-shadow:0 0 20px rgba(0,0,0,.5);}
+
+.loading-spinner{  display:block;  position:absolute;  top:calc(50% - 2px);  left:50%;  width:50%;  height:4px;  background:transparent;  transform-origin:left;  animation:animate 2s linear infinite;}
+.loading-spinner:before{  content:'';  position:absolute;  width:8px;  height:8px;  border-radius:50%;  background:#eb0000;  top:-3px;  right:-4px;  box-shadow:0 0 20px #eb0000;}
+.hero .hero-content h1.small-heading{  @apply text-5xl}
+

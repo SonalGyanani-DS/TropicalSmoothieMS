@@ -1,0 +1,82 @@
+ 
+
+.content-list{  @apply bg-transparent}
+.content-list .container{  @apply px-4;}
+.region-list{  @apply flex flex-wrap pt-[63px] pb-5}
+.region-list li{  @apply w-1/2 md:w-1/3 lg:w-1/4 mb-4}
+.region-list li a{  @apply text-lightGreen text-[19px] font-bold uppercase } 
+.region-list li a:focus-visible{  @apply text-dark-gray} 
+.content-list.city-page{  @apply pb-10 md:pb-14}
+.city-pageSection{ @apply pb-14 }
+.city-pageSection .nearby-card .closeing-div{@apply mb-0 mt-2}
+.city-pageSection .nearby-sec-inner{@apply grid grid-cols-3 mx-0 w-full gap-8 }
+.city-pageSection .nearby-sec-inner .nearby-card{@apply w-full px-0 mb-0 }
+ 
+.city-location .button{  @apply px-6}
+.content-list .c_location{@apply px-2.5 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-8}
+.city-location{@apply w-full  h-full bg-white border border-box-border rounded-none overflow-hidden min-h-[22rem]  z-10 relative shadow-sm my-6  lg:relative p-5
+  before:bg-shapet before:hidden after:hidden before:absolute before:-z-[1] before:-right-0.5 before:-top-0.5 before:w-[258px] before:h-[294px] before:bg-no-repeat after:-z-[1] after:w-[220px] after:h-[172px] after:bg-shapeb  after:absolute after:-left-1 after:-bottom-1 }
+.city-location .red-dot, .city-location .green-dot{ @apply !justify-start}
+.locator-map-block .red-dot, .locator-map-block .green-dot{ @apply !justify-start  }
+.filterModel .right-section{-webkit-filter: blur(0.25rem);filter: blur(0.25rem);}
+
+.city-location .button-bx{
+  @apply flex-wrap
+}
+.city-location .button-bx .btn{ 
+  @apply w-full md:w-[48%]
+}
+.city-location .button-bx .btn + .btn{
+  @apply mt-2 md:mt-0
+}
+
+.city-page .nearby-sec-inner{@apply flex flex-col md:flex-row gap-4 flex-wrap justify-center pb-0 xl:pb-0 max-w-none }
+
+.city-page .nearby-card{@apply w-full md:w-[49%]  xl:w-[32%] bg-white overflow-hidden  z-10 relative shadow-sm last:mb-0 lg:last:mb-0  mb-0 lg:mt-0  lg:relative p-3 md:p-5 border border-box-border
+}
+
+.city-page .nearby-card .availability-col{ @apply md:w-full md:max-w-full lg:max-w-[60%] xl:max-w-full}
+
+
+.city-page .nearby-card .green-dot, .city-page .nearby-card .red-dot{@apply justify-start }
+.city-page .nearby-card .content-col a{ @apply underline hover:no-underline }
+.city-location .button-bx{@apply ml-0 lg:ml-6 flex-row }
+.city-location .button-bx .btn{@apply w-full md:w-[48%] bg-Dark-red     border-none text-white  }
+.city-location .button-bx .btn.notHighligh{@apply w-full md:w-[48%] bg-white justify-start  border-none text-black underline  }
+.city-location .button-bx .btn + .btn{@apply mt-2 md:mt-0}
+.city-location .button-bx .btn:hover svg{@apply !fill-red }
+
+ 
+ 
+@keyframes slideInUp {
+	0% {
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+		visibility: visible
+	}
+
+	to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+}
+
+.animate__slideInUp {
+	-webkit-animation-name: slideInUp;
+	animation-name: slideInUp
+}
+
+.CookieConsent{
+  @apply  !bg-black bg-opacity-80  !left-0 transform  text-center p-3.5 text-sm; box-shadow: 0 0 20px rgba(0,0,0,.1) ;animation: slideInUp 1s ease-out forwards;
+ 
+}
+.CookieConsent > div{
+  @apply !m-0 w-full
+}
+.CookieConsent a{
+  @apply text-white underline hover:no-underline
+}
+.CookieConsent button{
+  @apply !bg-[#888] hover:!bg-[#666] !text-white uppercase !px-10 !py-1 leading-6 !border !border-solid !border-[#888] hover:!border-[#666] !m-0 !mt-2.5 min-w-[8.5rem]
+}
+

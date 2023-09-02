@@ -1,0 +1,407 @@
+   
+
+/* mid part */
+
+.locator-main{@apply flex relative grow items-start } 
+.locator-main .left-section{width: 66%;max-width: 59rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-flex: 1;
+-ms-flex-positive: 1;
+flex-grow: 1;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+width: 100%;
+height: 100%;
+position: relative;
+background-color: #fff;
+}
+.locator-main .right-section{@apply h-screen sticky top-0 hidden lg:block; width: 34%;-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1;}
+
+
+.locator-main .left-section .breadcrumb{@apply px-4 lg:pt-[17px]}
+.locator-main .left-section .breadcrumb .container-custom{ @apply p-0}
+.left-section .browse-dir{@apply px-4 min-h-[300px]}
+.left-section .browse-dir a{@apply text-lightGreen text-[19px] font-bold underline hover:no-underline}
+.left-section .browse-dir p{@apply text-dark-gray leading-7}
+
+
+.hover-red .pin-number{@apply !text-red}
+.right-section button .pin-number{@apply absolute left-0 right-0 top-[6px] z-10 font-primary font-bold text-[19px] text-center text-white}
+.right-section button.is-selected img{ -webkit-transform: scale(1.1);  transform: scale(1.1);  -webkit-transition: -webkit-transform .5s;  transition: -webkit-transform .5s;
+transition: transform .5s;  transition: transform .5s,-webkit-transform .5s;  -webkit-transform-origin: 100% 100%;  transform-origin: 100% 100%;  outline: none; z-index: 9999;}
+.right-section button.is-selected .pin-number{@apply text-bg-blue}
+
+.mapboxgl-marker:hover {
+	z-index: 99;
+}
+
+.marker-zindex{
+	z-index: 99999 !important;
+}
+
+.location-map-container { width: 100%;  height: 583px;   }
+
+/* filter css start */
+.ReactModalPortal{@apply fixed z-[999] bg-white; visibility: hidden;opacity: 0;-webkit-transition: visibility .3s,opacity .3s linear;transition: visibility .3s,opacity .3s linear; }
+.modalPopup {@apply fixed z-[999] left-0 top-0 bg-white w-full md:w-[66%] max-w-[59rem];visibility: hidden;opacity: 0;-webkit-transition: visibility .3s,opacity .3s linear;transition: visibility .3s,opacity .3s linear; }
+
+  .modalPopup .headFilter{@apply bg-brownishGreenPattern resize-x font-secondary  p-4 text-white w-full }
+  .modalPopup .headFilter h2{@apply text-[2rem]  text-white font-Oswald-Regular my-1 font-medium}
+  .modalPopup .headFilter .bg-closeIcon{@apply float-right max-w-[20px] cursor-pointer absolute top-[7px] right-4}
+
+  .modalPopup .FilterMid{@apply h-[calc(100vh_-_7rem)] overflow-y-auto bg-white}
+
+ 
+.ReactModalPortal .ReactModal__Content{@apply !inset-0 max-w-full max-h-full overflow-y-auto !static h-full}
+.ReactModalPortal .headFilter h2{@apply bg-brownishGreenPattern resize-x font-secondary text-[2rem] p-4 text-white fixed top-0 left-0 w-full md:w-2/4 z-[1]}
+  
+.modalPopup .filter-distance{@apply p-4 -mt-1}
+.modalPopup .filter-distance h2{@apply font-primary font-bold text-[19px] text-dark-gray}
+.modalPopup .filter-distance select{@apply w-full max-w-[228px] text-[13px] border border-dark-gray rounded-[2px] font-arial h-[1.375rem] mt-[13px] outline-none; }
+
+
+.modalPopup .filter-by-services{@apply p-4 pt-[11px]}
+.modalPopup .filter-by-services h2{@apply font-primary font-bold text-[19px] text-dark-gray mb-4 }
+ 
+.modalPopup .fillterList{}
+.modalPopup .fillterList .listItem{@apply mb-3}
+.modalPopup .fillterList .listItem input{@apply relative top-[2px]} 
+.modalPopup .fillterList .listItem label{ @apply ml-2 font-primary text-base text-dark-gray}
+
+.modalPopup .filterButtons{@apply text-right p-4 border-t-2 border-t-borderblue m-0 fixed left-0 bottom-0 bg-white w-full lg:w-[66%] max-w-[59rem] flex justify-end; flex-direction: row;}
+.modalPopup .filterButtons .btn{@apply text-[19px] uppercase font-bold text-[#df2a11] mx-4  align-middle !mt-0 hover:underline}
+.modalPopup .filterButtons .btn[disabled]{@apply uppercase font-bold text-dark-gray cursor-default no-underline}
+ 
+.modalShow,
+.ReactModal__Body--open .ReactModalPortal{visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s,opacity .3s linear;
+  transition: visibility 0s,opacity .3s linear;}
+
+
+/* DM pages */
+.heroCountry.heroCountry{@apply h-[15.75rem]}
+.hero-section .hero-content .Directory-title{@apply font-secondary font-bold text-[3.25rem] text-white text-center lg:leading-[60px] mt-[3px]}
+.countryBreadcrumb{@apply pt-1}
+
+ 
+.content-list .region-list{@apply columns-4 block}
+.content-list .region-list li{@apply w-full}
+.content-list .region-list li a{@apply active:text-dark-gray}
+
+.back-to-top{@apply text-left lg:text-center mx-[15px] text-dark-gray text-base}
+ 
+
+
+
+
+ 
+/* loading */
+
+.react-loading-skeleton{@apply !w-full}
+.map-section span div {@apply !p-0 -mt-2}
+
+
+ 
+
+/* banner sec */
+.banner-sec{ @apply bg-gray-light py-16 mt-4}
+.banner-sec h1{ @apply text-3xl text-center uppercase } 
+.left-listing{ @apply w-full}
+.map-section{@apply w-full }
+.locator-map-block{  @apply w-full md:h-[105vh] top-0 order-1 lg:order-none z-[99]}
+.hero-section .hero-content .banner-text.banner-dark-bg{ @apply  border-l-0 inline-block flex flex-col items-center p-4  rounded-lg backdrop-blur-sm bg-Dark-red mx-auto w-[340px] sm:w-[500px] px-2.5 text-center}
+.hero-section .hero-content .banner-text.banner-dark-bg h1{  @apply text-2xl md:text-[1.75rem] mb-1.5 font-normal}
+.hero-section .hero-content .banner-text.banner-dark-bg h3{  @apply text-xl md:text-2xl font-normal}
+.timer .box{  @apply text-base md:text-xl}
+.for-allow{  @apply inline-block w-full mb-2.5 text-red}
+
+
+
+
+/* Mobile btns */
+.mobile-btns{  @apply flex md:hidden justify-between w-full mb-3.5 float-left}
+.mobile-btns .btn.mapBtn{@apply text-lg bg-bg-gray1 text-white hover:bg-bg-gray1 hover:!text-white}
+body:not(.mapView) .mobile-btns .btn.listBtn{  @apply text-Dark-red border-t-0 border-l-0 border-r-0 !border-b-2 !border-red   !capitalize }
+ 
+body.mapView .mobile-btns .btn.mapBtn{  @apply  text-lg    !capitalize }
+.mobile-btns a.btn.listBtn {@apply bg-bg-blue !text-white border-none hover:bg-bg-blue}
+
+
+
+/* left listing */
+.search-bx{@apply mb-0  z-20  text-gray-dark bg-green-bg  p-5 pb-2 inline-block w-full;box-shadow: 1px 2px 2px #999;}
+.search-bx .search-field{ @apply relative w-[calc(100%_-_7rem)]}
+.search-main .fliter-sec {@apply flex items-center gap-3 -mt-2}
+.search-main .fliter-sec .filterBtn{@apply text-black flex items-center font-primary text-[0.938rem] uppercase border-2 border-BorderLight rounded-full w-11 h-11 text-center  bg-white}   
+.search-main .fliter-sec .filterBtn button{@apply m-auto}
+
+.locator-find-block{ }
+.locator-find-block .search-form{ }
+.search-bx button{ @apply float-left mr-0 relative text-white text-xs sm:text-sm }
+.search-bx button.useMyLocation {@apply text-black flex items-center font-primary text-[0.938rem] uppercase border-2 border-BorderLight rounded-full w-11 h-11 text-center  bg-white}
+.search-bx button.useMyLocation .icon{@apply m-auto}
+
+.search-bx .search-btn{@apply absolute top-1 rounded-none right-2  text-white p-2  text-center}  
+.search-bx .search-btn svg{ @apply mx-auto}
+.search-field input{ @apply text-ellipsis  w-full bg-white h-[44px]  text-dark-gray placeholder:text-dark-gray pr-16  pl-4 leading-7 uppercase  text-base font-primary 
+  outline outline-transparent outline-offset-[-0.8px] border-2 border-BorderLight focus:border-2 focus:border-black focus:outline rounded-full overflow-hidden }
+    .search-field input:focus-visible{outline: 1px solid #FFF;    border-radius: 1px; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; }
+    .search-field input:focus{border: solid 2px #000 !important;}
+.location p{ @apply mr-2 static rounded-lg -left-4 top-[0px] sm:top-[2px] xl:top-1}
+.search-bx .whitespace-nowrap{  @apply text-white !font-normal py-0 }
+.location{ @apply  border-b border-[#d8d8d8]  mt-0 }
+.location .result-inner .address-with-availablity {@apply mb-0}
+.c_facility{@apply flex items-center text-sm text-black mt-3 ml-1 flex-wrap leading-6 }
+.c_facility p {@apply mr-2}
+.c_facility div{@apply flex items-center flex-wrap leading-7}
+.location .result-inner .svg-map-icn svg{@apply fill-gray }
+.location.fixed-hover .result-inner .svg-map-icn svg{@apply fill-red }
+.c_facility img {@apply !m-[initial] !mr-1}
+   
+.c_facility_hover{@apply transition-all duration-300 cursor-pointer hover:scale-105}
+
+
+.location .button-bx{  @apply justify-start mx-auto pl-0 flex-row  gap-2 flex-wrap sm:flex-nowrap justify-between}
+.location .button-bx a{@apply bg-red text-white border px-3 uppercase border-red text-[19px] font-bold  py-[2px] w-[calc(33%_-_1rem)] rounded-[3px] md:hover:bg-white md:hover:text-red text-center}
+.result-list .location{ @apply first:mt-0}
+.location .button-bx .btn{    -webkit-appearance: none;  @apply bg-Dark-red font-secondary text-lg  border-none text-white  }
+.location .button-bx .btn.notHighligh{@apply w-full bg-transparent justify-start mt-0  border-none text-white text-sm uppercase}
+.location .button-bx .btn + .btn{  @apply mt-2 ml-2 md:mt-0 hover:no-underline   w-auto }
+.location .button-bx .btn:hover svg{@apply !fill-red }
+.location .button-bx .btn-dir .btn{@apply bg-bg-gray1 cursor-pointer flex border border-bg-gray1 rounded-md max-w-[11.5rem] px-2 xl:px-4  h-10 hover:!bg-bg-hover font-bold}
+.button-bx .btn.btn-store {@apply bg-bg-blue  flex border border-bg-gray1 rounded-md max-w-[12rem] px-2 xl:px-4 text-sm uppercase w-full h-10  font-bold} 
+.location .button-bx img {@apply mr-[0.2rem]}
+
+.map-count{ @apply absolute text-white left-1/2 -translate-x-1/2 top-2 md:top-1 2xl:top-1    text-xs }
+#result-1 .result-inner{ }
+#result-1 .result-inner .availablity-content{@apply mt-2}
+.location-phn{ @apply underline hover:!no-underline text-sm text-black }
+.CountList{ @apply pb-5 pl-4 inline-block text-base text-dark-gray}
+
+
+
+ 
+.location .result-inner .green-dot, .location .result-inner .red-dot{ @apply  flex justify-center items-center gap-2 }
+/* .location .result-inner .green-dot svg, .location .result-inner .red-dot svg{ @apply  ml-1 mt-1 } */
+.location-with-filter{ @apply mb-1 text-white text-[19px] leading-5 font-bold}
+.location-with-filter h1{@apply font-bold text-[32px] my-0 font-secondary }
+.search-main{@apply flex justify-between mt-4 items-center}
+
+.list-count{ @apply border-b border-gray-light mb-4 p-2 flex  flex-row items-center}
+.result-inner{ @apply p-4 pl-16 w-full relative  }
+.button-bx{@apply flex flex-col sm:flex-row mt-2.5 justify-around  ml-6}
+
+.button-bx .btn + .btn{  @apply mt-2 sm:mt-0}     
+.button-bx .btn:hover svg{@apply fill-white  }
+.scrollbar-container{@apply md:pr-3  overflow-hidden overflow-y-auto; scrollbar-width: none; -ms-overflow-style: none; }
+/*
+md:!h-[calc(100vh_-_12rem)]
+*/
+.scrollbar-container.ps--active-y{ @apply pr-4}
+body .ps:hover .ps__rail-y{@apply opacity-100}
+body .ps__rail-y{ @apply opacity-100 !bg-[#F6F6F3] w-4 !hidden}
+body .ps__thumb-y{ @apply bg-bg-gray1 opacity-100 right-1 w-2}
+body .ps__rail-y:hover .ps__thumb-y{ @apply w-2 bg-gray-dark}
+table.day-hrs{  @apply border-none w-full mb-0 inline-block}
+table.day-hrs tbody{ }
+table.day-hrs{}
+table.day-hrs td{ @apply text-left pl-3 text-base text-dark-gray}
+table.day-hrs td.DayName { @apply w-[59px] text-left text-base capitalize text-dark-gray font-primary pb-[3px]}
+/* table.day-hrs td.dayTime {@apply max-w-[106px]} */
+table.day-hrs .currentDay{@apply -order-1 border-l-2 border-borderblue }
+table.day-hrs .currentDay td{@apply  pl-3}
+.storelocation-openCloseTime table.day-hrs{  @apply bg-white xl:max-w-md 2xl:max-w-lg border   mx-auto xl:right-3.5 relative}
+.storelocation-openCloseTime table.day-hrs .dayName{  @apply w-auto}
+.storelocation-openCloseTime table.day-hrs .time-group{  @apply w-full justify-between flex }
+.storelocation-openCloseTime .day-hrs td{  @apply px-2.5}
+.storelocation-openCloseTime .day-hrs td.dayName{  @apply pl-8}
+.storelocation-openCloseTime table.day-hrs .currentDay .dayName .checked{  @apply left-2.5}
+
+.result-inner .hours-info {@apply relative inline-block pr-5 text-base text-dark-gray font-bold}
+/* .result-inner .hours-info:after {@apply content-[''] top-2 absolute right-0 border-[0.375rem] border-transparent  border-t-black} */
+.active.cursor-pointer .hours-info:after {@apply content-[''] rotate-180 top-[0.188rem]}
+.location-information a#holidaybtn {@apply absolute right-0 top-[0.188rem] text-[#333333] text-sm}
+.location-information .hours-sec .hours-div{@apply static}
+.hours-sec{@apply relative}
+.hours-sec .Cafe-hours-locAddInfo-top{@apply text-dark-gray italic p-1 pr-0 pl-[.875rem]}
+.location-information .address-main-sec .button-bx img{@apply hidden}
+
+/* .storelocation-openCloseTime table.day-hrs .time-b{
+  @apply bg-location-bg
+} */
+
+table.day-hrs tr:last-child td{  @apply border-b-0}
+table.day-hrs .dayName{ @apply text-lg md:text-lg capitalize pl-0 py-0 text-left}
+table.day-hrs .currentDay .dayName{  @apply relative}
+table.day-hrs .currentDay{  @apply text-dark-gray font-bold text-base}
+table.day-hrs .currentDay span.span-dayname{@apply text-dark-gray font-bold inline-block relative }
+table.day-hrs  span.span-dayname{@apply pl-5}
+table.day-hrs .currentDay span.span-dayname:before {@apply absolute top-[0.125rem] left-[0.25rem] h-full w-0.5 content-[''] bg-bg-primary}
+table.day-hrs .currentDay span.span-dayname:after{ @apply content-none w-1.5 h-2.5 border-b-2 border-r-2 border-white absolute top-[0.313rem] left-[0.625rem] transform rotate-45}
+
+
+
+/* table.day-hrs .currentDay .dayName .checked{  @apply absolute top-1/2 -mt-2 left-0 bg-red rounded-sm w-4 h-4 z-0}
+table.day-hrs .currentDay .dayName .checked:after{  @apply content-[''] border-b-2 border-l-2 border-white transform -rotate-45 z-0 w-2.5 h-1.5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -mt-1} */
+table.day-hrs .time-group{ @apply  items-center lowercase flex justify-between } 
+/* table.day-hrs .time-group .dash{ @apply w-2.5 h-0.5 bg-nav-link mx-1.5} */
+table.day-hrs .dayName span{ @apply block text-black text-base font-normal}
+table.day-hrs .time-b{  @apply text-base  w-[5rem]  rounded-sm inline-block align-bottom text-center}
+.hours-sec .hours-div{  @apply relative}
+.hours-sec .hours-div .holy-hrs{  @apply absolute -bottom-4 left-0       text-gray flex flex-row items-center}
+.hours-sec .hours-div .holy-hrs a{ @apply underline hover:no-underline  text-lg }
+.hours-sec .hours-div .holy-hrs span{ @apply mr-2 }
+.hours h4.box-title{@apply text-dark-gray}
+
+
+
+
+.ReactModal__Body--open{
+  @apply overflow-hidden
+}
+.ReactModal__Content{ 
+  @apply max-w-[94%] md:max-w-3xl w-full max-h-[80%] !mr-0 !p-0 !pb-8 !border-none  !rounded-none
+}
+.ReactModalPortal .ReactModal__Overlay{@apply !bg-transparent md:w-2/4 }
+.ReactModal__Overlay{
+  @apply !bg-black bg-opacity-80 z-[999]
+}
+.ReactModal__Content .font-bold.text-lg.mb-4 {@apply pt-3 px-5 pb-0}
+
+
+.ReactModal__Content .closeButton {@apply absolute right-4 top-2 cursor-pointer}
+.pop-up-holyhrs{@apply flex flex-row border border-dark-gray mx-4  border-b-0 last:border-b}
+.pop-up-holyhrs > div{@apply flex-[1_1_0] p-2.5 md:p-1.5 lg:p-2.5}
+.pop-up-holyhrs.heading{@apply bg-dark-gray text-white}
+.holytime-sec{@apply w-48 flex justify-evenly}
+.spac-bx{@apply w-8 text-center}
+.op-time{@apply w-8  lowercase}
+.cl-time{@apply w-8 lowercase}
+.days-sec{@apply w-8 lowercase}
+.closeButton{
+  @apply bg-red flex items-center justify-center rounded-full hover:opacity-80
+}
+.closeButton svg{
+  @apply w-3.5
+}
+.closeButton svg path{
+  @apply fill-white
+}
+
+
+
+
+.location-name-miles{
+  @apply relative pr-0 md:pr-[6.25rem] leading-5 mb-2.5 flex !flex-row justify-between items-center md:flex-col 
+}
+.location-name-miles h2{  @apply text-3xl md:text-lg leading-[1.375rem] text-red md:leading-tight}
+.location-name-miles h2 a{ @apply text-[19px] text-lightGreen font-primary font-bold uppercase}
+.address_1 div {
+  inline-size: 195px;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+.location-name-miles .distance{
+  @apply sm:absolute sm:top-0 right-0 text-base text-dark-gray  mt-1 sm:mt-0 font-normal 
+}
+ 
+
+.icon-row{
+  @apply relative mb-3 flex gap-2
+}
+.icon-row.location-name-miles{
+  @apply mb-2
+}
+.icon-row .icon{
+  @apply static top-0 left-0
+}
+.icon-row .icon img, .icon-row .icon svg{
+  @apply mr-0
+}
+.icon-row h6{
+  @apply font-normal text-red m-0 leading-5 text-base md:text-lg md:leading-5 mb-1.5
+}
+.availablity-content{
+  /*  border-l border-nav-link*/ @apply pl-0 py-1.5 
+}
+
+
+.gm-style-iw{ @apply  !px-0 max-w-full md:!max-w-[24.312rem] lg:!max-w-full}
+.gm-style .gm-style-iw-c{border: 1px solid #0000002E;
+  border-bottom: 7px solid #2AB6DF;@apply !rounded-md !shadow-[0_7px_0px_[#2AB6DF]] }
+.gm-style-iw-d .button-bx{@apply !justify-start flex-row }
+.gm-style-iw-d .button-bx .getdirection{@apply !bg-transparent !text-bg-blue underline text-sm font-bold}
+.gm-style-iw-d .button-bx .getdirection1{@apply !bg-transparent  !text-gray underline }
+.gm-style .gm-style-iw-tc::after{@apply bg-bg-blue}
+.info-window-content{@apply flex   justify-between}
+.info-window-content .address{ @apply w-2/3 flex gap-2 text-black text-sm mb-2}
+.info-map{ @apply w-2/3 flex gap-2 text-black text-sm mb-2}
+.gm-ui-hover-effect{@apply !top-0.5  !right-1 !bg-black opacity-100 rounded-full !w-5 !h-5} 
+.gm-ui-hover-effect span{@apply !w-4 !h-4 !m-0.5 !bg-white}
+.open-now-string svg{  @apply fill-gray-dark}
+.distance {@apply text-sm text-black}
+.distance img {@apply !m-auto}
+
+.gm-style .gm-style-iw-c .getdirection1.btn{@apply justify-start ml-6 uppercase font-secondary !text-bg-blue no-underline hover:scale-105}
+
+.closeing-div .opendot{ @apply  text-sm  gap-2   text-black relative before:hidden after:hidden  after:bg-[#338833] after:w-2 after:h-2  after:absolute after:top-1/2  after:ml-2 after:-translate-y-1/2  after:rounded-full}
+.closeing-div .opendot .hours-info{@apply text-base text-dark-gray font-bold}
+.closeing-div .closeddot{ @apply  text-lg font-primary text-gray relative  before:hidden after:hidden after:bg-[#EB001B] after:w-2 after:h-2  after:absolute after:top-1/2  after:ml-2 after:-translate-y-1/2  after:rounded-full}
+.closeing-div .notHighlight,
+.closeing-div .closeddot .red-dot{@apply font-bold text-base text-dark-gray}
+.closeing-div .closeddot .hours-info{@apply text-base text-dark-gray cursor-text}
+.inner-box-wrapper .closeing-div .hours-info{@apply text-[19px]}
+.closeing-div{ @apply  flex items-center gap-2 }
+.banner-dark-bg .closeing-div .opendot{ @apply  font-primary text-xl text-black relative before:hidden after:hidden }
+.banner-dark-bg .closeing-div .closeddot{ @apply  font-primary text-xl text-gray relative before:hidden after:hidden   }
+.detail-page .notHighlight{ @apply  text-[19px] text-dark-gray font-bold}
+.closeing-div .opendot .hours-info span{ @apply  text-base text-dark-gray font-bold} 
+.green-dot, .red-dot{ @apply  flex justify-center items-center  }
+.green-dot svg, .red-dot svg{ @apply  mr-1  }
+
+
+/* pagination */
+nav[aria-label="Pagination"] button{ @apply rounded-none text-Dark-red border-Dark-red}
+nav[aria-label="Pagination"] button:hover, nav[aria-label="Pagination"] button.bg-primary-light{ @apply bg-Dark-red text-white}
+nav[aria-label="Pagination"] button:disabled{@apply cursor-not-allowed text-opacity-60 bg-opacity-60}
+.pagination-conatiner{ @apply mt-4}
+.nearby-btn .btn{ @apply !w-full}
+.nearby-card .button-bx{@apply ml-0 lg:ml-0 flex-row justify-start gap-3 flex-wrap mt-auto}
+.nearby-card .button-bx .btn{@apply min-w-[12rem]  w-40 py-3 uppercase  !border-none  leading-5  md:w-auto font-secondary font-bold rounded-md !bg-bg-blue  text-sm text-white}
+.nearby-card .button-bx .btn.notHighligh{@apply min-w-[10.25rem] w-40 py-3 uppercase  !border-none  leading-5  md:w-auto font-secondary font-bold rounded-md !bg-bg-gray1 text-white text-sm hover:!bg-bg-hover}
+.nearby-card .button-bx .btn + .btn{@apply mt-0 w-auto hover:no-underline hover:!bg-bg-hover}
+.nearby-card .button-bx .btn:hover svg{@apply !fill-red }
+.map-section .button-bx .btn{@apply w-[11.25rem] md:w-[9.25rem] lg:w-[11.25rem]  bg-Dark-red hover:bg-hover-btn  border-none text-white  }
+.map-section .button-bx .btn.notHighligh{@apply w-full bg-white justify-start  border-none text-black underline  }
+.map-section .button-bx .btn + .btn{@apply mt-2 md:mt-0 w-auto ml-2 hover:no-underline}
+.map-section .button-bx .btn:hover svg{@apply !fill-red }
+
+.nearby-card .green-dot svg, .nearby-card .red-dot svg{@apply order-2 }
+.nearby-cta .Link.button-red{@apply text-lightGreen text-[19px] font-primary font-bold uppercase hover:underline }
+.nearby-sec .splide__slide img{@apply w-auto}
+ 
+/* locator page start  */
+
+/* breadcrumb */
+.breadcrumb{@apply text-nav-link py-3}
+.breadcrumb ul{
+  @apply flex flex-wrap items-center
+}
+.breadcrumb ul li{
+  @apply md:mr-2 font-primary flex items-center text-[14px]  uppercase font-bold  text-dark-gray
+}
+.breadcrumb ul li .home{
+  @apply underline
+}
+
+.breadcrumb ul li{
+  @apply after:content-['/'] after:w-1.5 after:h-1.5   after:mx-2 after:md:mr-0 after:mt-0.5 after:font-light after:text-dark-gray after:relative after:-top-2 last:after:hidden
+}
+.breadcrumb ul li a{ 
+  @apply font-primary uppercase font-normal text-dark-gray underline hover:no-underline
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "outDir": "./dist",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"],
+  "files": ["custom.d.ts"]
+}

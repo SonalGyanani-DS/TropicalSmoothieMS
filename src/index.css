@@ -1,0 +1,317 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "css/header.css";
+@import "css/footer.css";
+@import "css/global.css";
+@import "css/location.css";
+@import "css/locator.css";
+@import "css/dm-pages.css";
+
+  /* cookis */
+  .CookieConsent{@apply !bg-white text-left p-6}
+  .CookieConsent h2{@apply text-2xl text-dark-gray font-secondary}
+  .CookieConsent p{@apply font-primary text-base text-dark-gray}
+  .CookieConsent p a{@apply font-primary text-base text-red no-underline }
+  .CookieConsent #rcc-confirm-button{@apply absolute right-0 top-0 !bg-transparent !text-dark-gray !border-none w-auto !p-0 text-3xl; min-width: 45px; }
+  
+
+@media only screen and (max-width: 1100px) and (min-width:1024px)  {
+  .opennow-sec{ @apply text-base}
+}
+/* SSS */
+@media (max-width: 1329px) {
+  .tropicalSmoothieHeader .headerMenus ul li{@apply px-2}
+  .tropicalSmoothieHeader .headerMenus ul li a{@apply text-sm}
+  .tropicalSmoothieHeader .headerOrderNowCta .redBtn{@apply text-xs py-2 px-3 inline-block}
+  .locator-main .left-section{@apply w-[66%]}
+}
+/* SSS */
+@media (max-width: 1199px) {
+.locator-main .left-section{width: 65%;max-width: 59rem;}
+.locator-main .right-section{width: 35%;-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1;}
+  .container-narrow{@apply max-w-[62rem]}
+  .location .button-bx {@apply flex-wrap}
+  .location .button-bx a{@apply w-[calc(50%_-_1rem)] }
+  .tropicalSmoothieHeader .headerMenus ul li a{@apply text-xs; font-size: 12px; }
+  .hero-section .hero-content{@apply min-h-full}
+  .tropicalSmoothieHeader .headerIconMenus .icons a{font-size: 12px;}
+  .location-information .hours,
+  .location-information .address-main-sec{@apply w-[calc(50%_-_16px)] mb-3;
+    padding: 1.8rem 1.5rem;}   
+  .location-information .map-sec{@apply w-full h-auto}
+  .Cafe-item-wrapper .Cafe-features-serList{@apply columns-4}
+  .ReactModalPortal .bg-closeIcon{@apply left-[46%]}
+  
+  /* DS page */
+.region-list li{@apply w-1/3}
+.content-list .region-list{@apply columns-3  }
+}
+/* SSS */
+@media (max-width: 991px) {
+.container-narrow{@apply max-w-[48rem]}
+.tropicalSmoothieHeader .headerOrderNowCta .redBtn{@apply whitespace-normal}
+.NavModalOpen{@apply before:fixed before:bg-black before:bg-opacity-30 before:w-full before:h-full before:z-[1]}
+.toggleButton{@apply after:w-6 after:h-[3px] after:bg-dark-gray after:inline-block after:absolute after:left-0 after:transition after:bottom-2 before:absolute before:transition before:top-0 before:left-0  before:w-6 before:h-[3px] before:bg-dark-gray before:inline-block transition w-6 absolute right-3 top-[15px] h-[23px]}
+.toggleButton span{ @apply w-6 h-[3px] bg-dark-gray inline-block transition absolute top-[6px] left-0}
+.toggleButton.active{@apply after:rotate-[43deg] after:bottom-[13px] before:top-[7px] before:left-[0px] before:rotate-[-42deg] after:transition before:transition}
+.toggleButton.active span{@apply transition fixed top-[46px] left-0 w-full h-auto bottom-0 bg-black bg-opacity-40}
+.tropicalSmoothieHeader{@apply pr-11 px-1 py-[0] }
+.tropicalSmoothieHeader .headerLogo{@apply max-w-[128px] left-0 top-[1px] }
+.tropicalSmoothieHeader .headerIconMenus .icons+.icons img{@apply top-0}
+.tropicalSmoothieHeader .headerMenus ul{@apply absolute left-0 bg-white w-[calc(100%_-_1.25rem)] top-[46px] z-10 px-2 py-3 transition -translate-x-full block text-left}
+.tropicalSmoothieHeader .headerMenus ul li {@apply block px-2 py-2  } 
+.tropicalSmoothieHeader .headerMenus ul li a{@apply text-base w-full inline-block}
+.tropicalSmoothieHeader .headerMenus ul.shownav{@apply translate-x-0 transition}
+ 
+.tropicalSmoothieHeader .headerMenus ul li a:hover::after{@apply bottom-[-2px]}
+.tropicalSmoothieHeader .headerIconMenus .icons{@apply first:hidden pr-2}
+.tropicalSmoothieHeader .headerIconMenus .icons img{@apply top-0}
+.tropicalSmoothieHeader .headerIconMenus .icons:first-child a{@apply relative top-[1px]}  
+.tropicalSmoothieHeader .headerIconMenus .icons a span{@apply hidden }
+.tropicalSmoothieHeader .headerOrderNowCta{@apply pr-0 }
+.tropicalSmoothieHeader .headerOrderNowCta .redBtn {@apply w-14 inline-block p-0 py-1 leading-3 text-center mt-[-1px]}
+.locator-main{@apply flex-wrap }
+.locator-main .left-section{@apply w-full max-w-full} 
+.locator-main .right-section{@apply w-full}
+.search-field input:focus-visible{outline: 1px solid #FFF; border-radius: 1px; border-radius: 100px;}
+.aboutUsBlock .bg-white .object-cover {height: 150px;}
+.modalPopup{@apply w-full max-w-full}
+/* location page */
+.hero-section .hero-content h1{@apply text-xl leading-[1.4] mb-4}
+.hero-section .hero-content h2{@apply text-4xl leading-[1.22] mt-0 align-bottom}
+.location-information h4.box-title{@apply text-xl}
+.Promo-infoWrapper{@apply w-full}
+.location-information{@apply px-0}
+.Promo-infoWrapper h2.Promo-title{@apply text-[1.75rem]}
+.container-narrow .grid{@apply flex mt-6}
+.container-narrow .grid .Promo-image{@apply w-2/4 object-cover}
+.news-box .Product-linkWrapper a{@apply whitespace-nowrap}
+.aboutUsBlock .about .About-title{@apply text-[1.75rem] leading-6}
+.aboutUsBlock .bg-white{ display: inline-block; padding: 0;  }
+.aboutUsBlock .bg-white .about{@apply p-4 pb-0}
+.aboutUsBlock .bg-white .actionBtn{@apply p-4 pt-3}
+.aboutUsBlock .bg-white .w-full{ width: 100%; padding: 0;}
+.aboutUsBlock .bg-white .object-cover{height: 195px} 
+.faq-card{@apply mt-8}
+.faq-card h2{@apply text-[1.75rem] mb-4 leading-9}
+.section-title h2{
+  @apply text-[1.75rem] mb-4 leading-9
+}
+.nearby-sec .sec-title h2{@apply text-[1.75rem] leading-9}
+ 
+.container-narrow .nearby-sec-inner{@apply justify-center flex-wrap}
+.nearby-card .icon-row{@apply w-full}
+.nearby-sec-inner .nearby-card{@apply w-[calc(50%_-_16px)]}
+.banner-red-box{@apply mx-4}
+.location-map-container {@apply !w-full  !h-[194px]}
+.location-map-container canvas {@apply w-full}
+/* DM page */
+.region-list li{@apply w-1/2}
+.hero-section .hero-content .Directory-title{@apply text-[28px] leading-9}
+.content-list .region-list{@apply columns-2  }
+/* city page */
+.city-pageSection .nearby-sec-inner{@apply w-full grid-cols-2 }
+.city-pageSection .nearby-sec-inner .nearby-card{@apply mb-0 }
+ 
+}
+@media screen and (max-width: 1024px){
+  .ReactModalPortal .filter-distance select{ appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+  .site-header .main-nav ul.primary-nav {
+    backface-visibility: hidden;
+    border-bottom: 4px solid #02a6db;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateY(10px);
+    width: 100%;
+    display: block;
+  }
+  body.menu-opened .site-header .main-nav ul.primary-nav{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    background: #e9e9e9;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.35);
+    list-style: none;
+    padding: 0;
+    transform-style: preserve-3d;
+    display: block;
+  }
+  
+  }
+@media screen and (max-width: 767px){
+ 
+body:not(.mapView) .map-section{  @apply hidden}body.mapView .left-listing{  @apply hidden}
+.gm-style .gm-style-iw-c{@apply !max-w-[22rem] w-full pt-1}
+.news-box .Product-linkWrapper a:active {border: none;}
+.direction-button a:active{@apply hover:border-none}
+.breadcrumb {@apply mt-2 }
+.breadcrumb ul li {@apply mb-5 }
+ 
+/* sss */
+.search-bx { padding: 14px 17px 8px 16px;}
+.search-field input{@apply pr-16}
+.tropicalSmoothieHeader .rightPart{@apply mt-[-5px]}
+.tropicalSmoothieHeader .headerIconMenus .icons+.icons img{top: 1px}
+.icon-row.location-name-miles{@apply block static}
+.result-inner{@apply p-4 }
+.locator-main .result{@apply mr-4}
+.locator-main .result .numbring{@apply hidden}
+.location .button-bx a{@apply w-full}
+.ReactModalPortal .bg-closeIcon{@apply left-[initial] right-3}
+.locator-main .left-section .breadcrumb{@apply pt-[21px] pb-[3px]}
+.left-section .browse-dir p{@apply leading-[26px]}
+.location-name-miles .distance { @apply absolute right-0 top-[26%] ;transform: translate(-21%, 0);}
+.location-with-filter h1{@apply text-2xl ; letter-spacing: 0.2px;}
+.location-with-filter h1+br{@apply hidden}
+.location-with-filter h4{@apply leading-[28px] mt-[17px]} 
+ 
+.search-main .fliter-sec { @apply gap-2}
+.search-bx .search-field {width: calc(100% - 6.5rem);}
+ 
+.footer{@apply p-3 pb-12} 
+.footer .footerMenusList{@apply flex-wrap pb-0 border-none}
+.footer .footerMenusList .Footer-col{@apply w-full border-b border-b-white py-4 pr-0}
+.footer .footerMenusList .Footer-col .accordion__panel{transition:initial}
+.Footer-bottomWrapper{@apply inline-block w-full text-center}
+.footer .Footer-topWrapper .footerSocial{@apply py-4}
+.nearby-sec{@apply pt-4}
+.footer .Footer-topWrapper .footerLogo{@apply w-24}
+.Footer-bottomWrapper .Footer-copyright{@apply pt-6 pb-3}
+/* footer */
+.footer .footerMenusList .Footer-col .accordion__button[aria-expanded="false"] h5:after{transition: .2s; height: 15px;}
+.footer .footerMenusList .Footer-col .accordion__button[aria-expanded="true"] h5:after{transform: rotate(90deg); -webkit-transition: .2s; transition: .2s;}
+ 
+/* Location page */
+.container-narrow .nearby-sec-inner{@apply mt-8}
+.nearby-sec-inner .nearby-card{@apply w-full }
+.location-information .address-main-sec .box-title, 
+.location-information .hours .box-title, 
+.location-information .map-sec .box-title { @apply mt-0}
+.location-information .map-sec{@apply p-4}
+.banner-content-row{@apply flex-wrap}
+.banner-content-row .banner-text{@apply w-full }
+.banner-content-row .banner-box{@apply w-full px-0 mt-8}
+.location-information .hours, .location-information .address-main-sec{@apply w-full mb-0 mt-8 p-4;order: initial;}
+.location-information .location-phn{@apply text-lightGreen text-[19px] font-bold}
+.Cafe-item-wrapper .Cafe-features-serList{@apply columns-1}
+.BgAbout{@apply pt-8 pb-8}
+.aboutUsBlock .bg-white .object-cover{height: 150px;}
+.aboutUsBlock .about .About-title{@apply leading-9}
+.container-narrow .grid{@apply flex-wrap}
+.container-narrow .grid .Promo-image{@apply w-full}
+.Promo-container{@apply w-full px-8 py-4 block}
+.news-boxes{@apply pb-6}
+.news-boxes .news-box{@apply mb-8}
+.location-map-container {@apply !w-full !h-[150px]}
+.location-map-container canvas {@apply w-full }
+/* DS page */
+.region-list{@apply pl-4 pt-8}
+.region-list li{@apply w-full}
+.countryBreadcrumb{@apply ml-4;  border-top: 0.125rem solid #6fccda;}
+.content-list .region-list{@apply columns-1  }
+/* city page */
+.city-pageSection .nearby-sec-inner{@apply  grid-cols-1 }
+ 
+}
+@media screen and (max-width: 640px){
+  .address-main-sec .map-sec {@apply hidden}
+ .map-sec {@apply block}
+ .hours{@apply order-2}
+}
+@media screen and (max-width: 575px){
+  .locator-main .result table{@apply ml-0 mt-1}
+  .btn-dir{@apply w-full}
+.location .button-bx .btn-dir .btn,.button-bx .btn.btn-store {@apply !max-w-[initial] w-full justify-center}
+.nearby-card .button-bx .btn {@apply !max-w-[initial] !w-full justify-center}
+}
+@media screen and (max-width: 420px){
+.availablity-content{ @apply flex-col}
+.opennow-sec{@apply w-full even:w-full}
+.pop-up-holyhrs{@apply mx-1}
+.pop-up-holyhrs div{ @apply text-xs}
+.department-sec ul{@apply flex-col }
+.department-sec ul a{@apply w-full }
+ 
+ 
+.gm-style .gm-style-iw-c{
+  @apply !max-w-[19rem] 
+}
+.location-name-miles h2{
+  
+  overflow-wrap: break-word;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
+ 
+.nearby-sec .location-name-miles h2 {
+  inline-size: auto;
+}
+.ReactModal__Content .font-bold.text-lg.mb-4 {
+  padding-left: 0.25rem;
+}
+}
+@media screen and (max-width:359px){
+  .site-header .header-top .logo-sm-mob{ @apply !block}
+  .site-header .header-top .logo-sm-mob svg{ @apply !w-14    }
+  .site-header .header-top .logo-large-mob{ @apply !hidden}
+  table.day-hrs .time-b{@apply w-[2.75rem] }
+  .storelocation-openCloseTime table.day-hrs{ @apply text-xs}
+  .storelocation-openCloseTime .day-hrs td.dayName{@apply pl-6}
+  .storelocation-openCloseTime table.day-hrs .currentDay .dayName .checked{@apply left-1}
+}
+ 
+.product-copyright {
+	font-size: .5rem;
+	line-height: 2;
+	vertical-align: top;
+}
+#mapbox_autocomplete-list{
+  @apply absolute top-full left-1/2 transform -translate-x-1/2 bg-white py-1 w-full rounded-md max-w-[460px] z-[1] xl:-ml-11; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+#mapbox_autocomplete-list:before{
+  @apply content-[''] absolute -top-2 left-3 border-b-[15px] border-l-[15px] border-r-[15px] border-transparent border-b-white -z-[1]
+}
+#mapbox_autocomplete-list li{
+  @apply px-2.5 py-2.5 leading-tight text-[13px] cursor-default hover:bg-[#e8e8e9] text-black font-[arial] text-ellipsis overflow-hidden; white-space: nowrap;
+}
+.search-field input.input-focus{@apply focus:bg-[url(images/arrow.png)] hover:bg-[url(images/arrow.png)] bg-no-repeat bg-center; background-position-x: calc(100% - 50px); }
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+  #mapbox_autocomplete-list{@apply max-w-full ml-0 border border-[#a0a0a0] rounded-none -mt-[9px];}
+  #mapbox_autocomplete-list li{@apply py-1 leading-3 }
+  #mapbox_autocomplete-list:before{@apply content-none}
+  .search-field input.input-focus, .search-field input.input-focus:focus, .search-field input.input-focus:hover{background-image: none;}
+  
+}
+#mapbox_autocomplete-list .active {
+  @apply bg-[#e8e8e9];
+}
+ /* 404 page  */
+.page-404 h1{@apply text-[#6d6e70] font-bold font-primary text-[32px] leading-[37px] lg:text-[52px] lg:leading-[1.15] uppercase mb-16}
+.page-404 .error-msg{@apply my-2 lg:text-2xl lg:leading-[1.15] font-bold text-[#4e7a00] uppercase mb-16}
+.error-products{@apply flex flex-wrap mx-auto max-w-[60rem] w-full}
+.error-products .products{@apply w-full lg:w-1/3 text-center px-1 first:pl-0 last:pr-0 text-[#6d6e70]}
+.error-products .products h2{@apply uppercase text-2xl leading-[1.15] text-[#6d6e70] font-primary font-bold }
+.error-products .products h2 sup{@apply text-[25%] transform -translate-y-[.2em] align-super inline-block }
+.error-products .products p{@apply text-sm leading-[1.15] mb-4}
+.error-products .products .btn{@apply border no-underline rounded-xl font-bold uppercase border-[#df2a11] bg-[#df2a11] text-white transition-all duration-[0.2s] md:hover:bg-white md:hover:text-[#df2a11] px-3 py-1 md:hover:px-4 inline-block leading-[1.15]}
+.scrollbar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.search-bx button {	
+	color: #2ea1b2;
+}
+
+.custom-searchbar-container .inline-flex.items-center.justify-between.w-full .w-7.mx-2\.5.my-2 {
+	display: none;
+}
+
+.custom-searchbar-container  .w-6.text-gray-400{
+  display: none;
+}
